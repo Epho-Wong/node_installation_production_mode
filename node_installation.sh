@@ -31,6 +31,9 @@ npm -v
 npx -v
 
 sudo /opt/node/bin/npm install -g pm2
+
+sudo ln -s /opt/node/bin/pm2 /usr/local/bin/pm2
+sudo ln -s /opt/node/bin/pm2-runtime /usr/local/bin/pm2-runtime
 echo "1.maybe you can add "export PATH=/opt/node/bin:$PATH" in /etc/environment or /etc/profile, then source /etc/environment make it effective."
 
 echo "2.please remember create nologin user and /home path for it first cause npm install xxx would need it."
